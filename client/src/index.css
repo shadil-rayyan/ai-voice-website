@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(195, 100%, 23%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* Kerala-inspired custom colors */
+  --kerala-teal: hsl(195, 100%, 23%);
+  --kerala-mint: hsl(154, 54%, 67%);
+  --kerala-gold: hsl(50, 100%, 50%);
+  --kerala-navy: hsl(199, 100%, 7%);
+  --kerala-light: hsl(220, 13%, 97%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(195, 100%, 23%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .bg-kerala-gradient {
+    background: linear-gradient(135deg, hsl(195, 100%, 23%) 0%, hsl(154, 54%, 67%) 100%);
+  }
+  
+  .bg-kerala-gradient-dark {
+    background: linear-gradient(135deg, hsl(199, 100%, 7%) 0%, hsl(195, 100%, 23%) 50%, hsl(154, 54%, 67%) 100%);
+  }
+  
+  .text-kerala-teal {
+    color: hsl(195, 100%, 23%);
+  }
+  
+  .text-kerala-mint {
+    color: hsl(154, 54%, 67%);
+  }
+  
+  .text-kerala-gold {
+    color: hsl(50, 100%, 50%);
+  }
+  
+  .text-kerala-navy {
+    color: hsl(199, 100%, 7%);
+  }
+  
+  .text-kerala-light {
+    color: hsl(220, 13%, 97%);
+  }
+  
+  .bg-kerala-teal {
+    background-color: hsl(195, 100%, 23%);
+  }
+  
+  .bg-kerala-mint {
+    background-color: hsl(154, 54%, 67%);
+  }
+  
+  .bg-kerala-gold {
+    background-color: hsl(50, 100%, 50%);
+  }
+  
+  .bg-kerala-navy {
+    background-color: hsl(199, 100%, 7%);
+  }
+  
+  .bg-kerala-light {
+    background-color: hsl(220, 13%, 97%);
+  }
+  
+  .border-kerala-teal {
+    border-color: hsl(195, 100%, 23%);
+  }
+  
+  .border-kerala-mint {
+    border-color: hsl(154, 54%, 67%);
+  }
+  
+  .border-kerala-gold {
+    border-color: hsl(50, 100%, 50%);
+  }
+}
