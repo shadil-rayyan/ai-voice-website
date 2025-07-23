@@ -1,0 +1,84 @@
+{
+  "page": {
+    "header": {
+      "logo": "(logo placeholder)",
+      "nav": ["Features", "About & Mission", "Portfolio", "Team", "Contact"],
+      "actions": [
+        { "type": "button", "label": "Get Demo", "style": "primary" },
+        { "type": "button", "label": "Download Brochure", "style": "secondary" }
+      ]
+    },
+    "hero_section": {
+      "title": "The Future of Cyber Security Is Here",
+      "subtitle": "Stacked futuristic subtitle describing the product and what problems it solves in a concise manner.",
+      "visual": "central circular abstract design",
+      "cta_buttons": [
+        { "type": "button", "label": "Get Demo", "style": "primary" },
+        { "type": "button", "label": "Download Brochure", "style": "secondary" }
+      ]
+    },
+    "features_section": {
+      "heading": "The Future of Cyber Security Is Here",
+      "features": [
+        {
+          "title": "Secure Data Collection",
+          "description": "Description of secure data collection processes using innovative technologies.",
+          "icon": "geometric circular pattern"
+        },
+        {
+          "title": "Secure Data Transmission",
+          "description": "Explanation of security measures for transmitting data safely.",
+          "icon": "circular mesh pattern"
+        },
+        {
+          "title": "Other Products & Integrations",
+          "description": "Brief info on additional products and how they integrate.",
+          "icon": "complex radial burst pattern"
+        }
+      ]
+    },
+    "card_section": {
+      "cards": [
+        {
+          "title": "Transact",
+          "description": "Details about transaction products or services.",
+          "icon": "symbol in pink/magenta tint"
+        },
+        {
+          "title": "Token",
+          "description": "Information related to tokens and their uses.",
+          "icon": "symbol in greenish tint"
+        }
+      ]
+    },
+    "partnerships_section": {
+      "heading": "Our Partners & Studies",
+      "partners": [
+        "FORVIS",
+        "onlyseconds",
+        "TRUSTWORX",
+        "MORE PARTNERS"
+      ]
+    },
+    "footer": {
+      "pagination": "1/6"
+    }
+  },
+  "styles": {
+    "color_palette": {
+      "primary_dark": "#000000",
+      "accent_pink": "#E91E63",
+      "accent_green": "#4CAF50",
+      "text_light": "#FFFFFF",
+      "background_gradient": "dark to subtle magenta/pink highlight"
+    },
+    "fonts": {
+      "primary": "Modern sans-serif",
+      "sizes": {
+        "header_title": "48px",
+        "section_title": "32px",
+        "body_text": "16px"
+      }
+    }
+  }
+}

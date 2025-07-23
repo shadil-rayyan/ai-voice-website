@@ -1,0 +1,91 @@
+You are a senior full-stack engineer and growth-marketing copywriter.  
+Your task: generate production-ready code and copy for a modern, conversion-optimised landing page that promotes a Malayalam-first AI Voice Agent for customer service (“Project Dhwani”).  
+The site must convince two personas:  
+  • SMB decision-makers in Kerala who need automated Malayalam voice support.  
+  • Early-stage and seed investors evaluating regional-language AI opportunities in India.
+
+Site requirements
+=================
+TECH STACK
+• nextjs+ Tailwind CSS v3 
+• Animations: Tailwind’s built-in classes only.  
+• Icons: Heroicons CDN.  
+• Fonts: Google Fonts – “Inter” for body, “DM Serif Display” for headings.  
+• All copy must be easily editable in one file; reuse CSS utility classes for rapid iteration.  
+• Insert “TODO” comments where founders should swap real demo videos, logos, or App Store badges.
+
+SEO & PERFORMANCE
+• Lighthouse score ≥95 mobile & desktop.  
+• Meta-tags: title (≤60 chars), description (≤155 chars), Open Graph, Twitter card.  
+• Schema.org `Product` markup with `offers`, `brand`, `audience`, `aggregateRating` (placeholder).  
+• Preload hero background image and largest contentful paint asset.
+
+ACCESSIBILITY
+• `alt` text for all images.  
+• Minimum colour-contrast AA.  
+• Keyboard-navigable header and modal.  
+• `aria-label`s for icons.
+
+PAGE SECTIONS
+1 Hero  
+  - Punchy 6-word headline + 12-word subhead.  
+  - Primary CTA “Book a Demo” (scrolls to contact form).  
+  - Secondary CTA “Investor Deck” (downloads `/assets/Dhwani_OnePager.pdf`).  
+  - Background: subtle Kerala-inspired gradient (#005f73 → #94d2bd).  
+
+2 Problem → Solution  
+  - Two-column layout.  
+  - Left: statistic cards (see DATA SNIPPETS).  
+  - Right: concise narrative of language barriers in customer support.
+
+3 Product Demo  
+  - Autoplay-muted MP4 placeholder (600×338).  
+  - Below video: three feature bullets with Heroicons.
+
+4 Market Opportunity  
+  - Horizontal bar chart rendered via Alpine.js + `div` bars (no external libs).  
+  - Dataset: India Voice Commerce, Voice UI, and AI Customer Service CAGRs (see DATA SNIPPETS).  
+  - Caption emphasises TAM in USD billions.
+
+5 Competitive Edge  
+  - Comparison table: Dhwani vs. Generic Chatbot vs. English-only IVR.  
+  - Green ticks / red crosses (SVG) to visualise advantages.
+
+6 Social Proof  
+  - Rotating testimonial carousel (Alpine loop) with Malayalam customer quotes + star rating.
+
+7 Tech Stack Badge Row  
+  - Cursor, Firebase, Google Cloud Speech, Whisper, Bytehx ASR logos (SVG placeholders).
+
+8 Call to Action Strip  
+  - Bold gradient, one-liner, CTA button.
+
+9 Contact & Lead-Capture  
+  - Form fields: name, email, company, message, checkbox “I’m an investor”.  
+  - Form validation (Alpine) and POST to `https://getform.io/f/<<YOUR-ENDPOINT>>`.  
+  - Success toast.
+
+10 Footer  
+  - Compact nav links, social icons, © year auto-updates with JS.
+
+DATA SNIPPETS (required)
+• Malayalam speakers in India: 35.6 million (2011 Census)  
+• Kerala share: 97% of state population are Malayalis  
+• India Voice Commerce: USD 1.568 B (2024) → USD 7.47 B (2030); CAGR 32%  
+• India Voice UI: USD 1.28 B (2023) → USD 6.41 B (2030); CAGR 25.9%  
+• Global AI Customer Service: USD 12.06 B (2024) → USD 47.82 B (2030); CAGR 25.8%  
+• 70% of customer interactions to be self-service by 2026 (Gartner).  
+• Case study placeholder: 38% drop in average handle time at pilot telco within 60 days.
+
+COPY GUIDELINES
+• Tone: visionary yet grounded; sprinkle cultural resonance (e.g., “Namaskaram”).  
+• Avoid jargon like “synergy”, “paradigm”. Plain, confident language.  
+• Numbers: no spaces before units, use commas as thousands separator (e.g., USD 7,469.5 million).  
+• All factual statements must include HTML comments with citations (e.g., `<!-- Source [3] -->`).
+
+DELIVERABLES
+• `index.html` complete with inline `<style>` powered by Tailwind @apply for custom classes.  
+• `/assets/` sub-folder manifest (add placeholder file names).  
+• `README.md` summarising Firebase deploy steps.
+
+Return ONLY the code; no explanations.
