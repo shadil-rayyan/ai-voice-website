@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            node_modules
+            .vite
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json', 'package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run type checking
+        run: npm run check
+
+      - name: Build project
+        run: npm run build
+
+      # Optional: Run tests or dev server if needed
+      # - name: Run tests
+      #   run: npm test
+
+      # - name: Start server (for demo/testing)
+      #   run: npm run start
